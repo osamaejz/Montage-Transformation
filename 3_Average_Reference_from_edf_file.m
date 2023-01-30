@@ -6,7 +6,7 @@ eeglab
 for k = 1:(length(Files_dir)-2)
     
     name = strcat(myFolder, Files_dir(k+2).name);
-    EEG1 = pop_biosig(name);
+    EEG = pop_biosig(name);
     EEG.setname = Files_dir(k+2).name;
     EEG.data = EEG.data(1:38,:);
     EEG.nbchan = 38;
