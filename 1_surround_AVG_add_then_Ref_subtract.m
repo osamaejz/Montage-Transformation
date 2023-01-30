@@ -10,7 +10,7 @@ Fpz = 2;
 arr = [Fpz, F3, Fz, F4]; 
 
 %EEG_data = {}
-for k = 85:(length(Files_dir)-2)
+for k = 1:(length(Files_dir)-2)
     data = [];
     name = strcat(myFolder, Files_dir(k+2).name);
     EEG = pop_biosig(name);
